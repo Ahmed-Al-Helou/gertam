@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DirectPay Test Form</title>
+</head>
+<body>
+    <h1>DirectPay Test Form</h1>
+    <p>Hash: fb8b47e97e41c91717040d5d874b4789b26610ca240dc845f763032e32372df8</p>
+    <form method="POST" action="https://paytest.directpay.sa/SmartRoutePaymentWeb/SRPayMsgHandler" id="testForm">
+        <input type="hidden" name="Amount" value="10000">
+        <input type="hidden" name="Channel" value="0">
+        <input type="hidden" name="CurrencyISOCode" value="682">
+        <input type="hidden" name="Language" value="en">
+        <input type="hidden" name="MerchantID" value="DP00000051">
+        <input type="hidden" name="MessageID" value="1">
+        <input type="hidden" name="PaymentDescription" value="Test Payment">
+        <input type="hidden" name="Quantity" value="1">
+        <input type="hidden" name="ResponseBackURL" value="http://localhost:3000/payment/callback">
+        <input type="hidden" name="ThemeID" value="1">
+        <input type="hidden" name="TransactionID" value="TEST-1765584663">
+        <input type="hidden" name="Version" value="1.0">
+        <input type="hidden" name="SecureHash" value="fb8b47e97e41c91717040d5d874b4789b26610ca240dc845f763032e32372df8">
+        <button type="submit">Submit to DirectPay</button>
+    </form>
+    
+    <h2>Form Data:</h2>
+    <pre>Amount: 10000
+Channel: 0
+CurrencyISOCode: 682
+Language: en
+MerchantID: DP00000051
+MessageID: 1
+PaymentDescription: Test Payment
+Quantity: 1
+ResponseBackURL: http://localhost:3000/payment/callback
+ThemeID: 1
+TransactionID: TEST-1765584663
+Version: 1.0
+SecureHash: fb8b47e97e41c91717040d5d874b4789b26610ca240dc845f763032e32372df8
+    </pre>
+</body>
+</html>

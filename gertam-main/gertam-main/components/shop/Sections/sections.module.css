@@ -1,0 +1,20 @@
+.sections{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+}
+.sections .card{
+    text-align: center;
+    background: #f5f5f5;
+    padding:10px 25px;
+
+}
+.sections .card img{
+    width: 100%;
+}
+.sections .card h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #0F172A;
+}

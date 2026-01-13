@@ -1,0 +1,32 @@
+.productFilters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.productFilters h3{
+    font-size: 18px;
+    margin: 0;
+}
+.productFilters select{
+    padding: 10px;
+    color: var(--text-color);
+    appearance: none;       /* للمتصفحات الحديثة */
+  -webkit-appearance: none; /* كروم/سفاري */
+  -moz-appearance: none;    /* فايرفوكس */
+  background: none;  
+  border-radius: 8px;
+  border: #CBD5E1 1px solid;
+  font-size: 16px;
+  width: 150px;
+  margin: 0 10px;
+}
+.FilterOptions{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 700px) {
+    .productFilters{
+        display: none;
+    }
+}

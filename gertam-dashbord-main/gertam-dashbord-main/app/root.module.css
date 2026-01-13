@@ -1,0 +1,10 @@
+.contaciner{
+    margin-right: 250px;
+}
+
+@media (max-width: 900px) {
+    .contaciner{
+        margin: 0;
+        padding: 10px ;
+    }
+}

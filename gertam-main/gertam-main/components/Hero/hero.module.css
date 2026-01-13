@@ -1,0 +1,119 @@
+.hero{
+  background-image: url("/hero-bg.png");
+  background-repeat: no-repeat; /* تمنع التكرار */
+  background-size: cover;       /* تجعل الصورة تغطي العنصر بالكامل */
+  background-position: center;  /* تضع الصورة في المنتصف */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 50px;
+    
+}
+.hero span{
+    margin: 20px auto;
+    font-size: 16px;
+    color: #474747;
+}
+.hero .allProdcutBtn{
+    background-color: var(--main-color);
+    color: var(--text-white-color);
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 50px;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+}
+.serve{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    width: 250px;
+
+}
+.serve img{
+    width: 50px;
+    margin-right: 15px;
+}
+.serve h4{
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+.serve .text {
+    margin-top: 20px;
+}
+.serve .text p{
+    font-size: 1.2rem;
+}
+.serveses {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+    .hero h1{
+      
+        display: none;
+    }
+    .hero span{
+        text-align: center;
+        font-size: 13px;
+
+    }
+}
+@media (max-width: 776px) {
+    .hero h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .hero{
+
+        padding-top: 50px;
+        background: linear-gradient(to bottom, #D6E5F5, #FFFFFF);
+
+    }
+}
+@media (max-width: 1096px) {
+    .hero h1{
+        font-size: 3rem;
+    }
+
+    .hero{
+
+        padding-top: 50px;
+        background: linear-gradient(to bottom, #D6E5F5, #FFFFFF);
+
+    }
+
+}
+@media (max-width: 996px) {
+    .hero h1{
+        font-size: 35px;
+    }
+    
+    .hero{
+        padding-top: 50px;
+        background: linear-gradient(to bottom, #D6E5F5, #FFFFFF);
+
+    }
+    .hero button.allProdcutBtn{
+        margin-top: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .hero{
+        min-height: 80vh;
+    }
+}

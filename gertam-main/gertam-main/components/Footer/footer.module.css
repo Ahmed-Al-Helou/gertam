@@ -1,0 +1,134 @@
+.footer {
+    background: #0F172A;
+    color: var(--text-white-color);
+    margin-top: 50px;
+    direction: rtl;
+}
+
+.footer .top {
+    background-color: #EFF4F7;
+    
+}
+.footer .top .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 220px;
+    
+}
+.footer .top .text h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--text-color);
+}
+.footer .top .text p{
+    font-size: 15px;
+    color: #64748B
+}
+.footer .top .sendMassage{
+    color: var(--text-color);
+}
+.footer .top .sendMassage .input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+        border: 1px solid #94A3B8; 
+        border-radius: 6px;
+        padding: 5px;
+
+}
+.footer .top .sendMassage .input button{
+    padding: 10px;
+    width: 100px;
+    font-size: 15px;
+    color: var(--text-white-color);
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 3px ;
+    margin: 0;
+
+}
+.footer .top .sendMassage .input input {
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    margin: 0;
+    font-size: 16px;
+    direction: rtl;
+    color: var(--text-color);
+}
+.logo{
+    width: 200px;
+}
+.footer .middle{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 30px;
+padding: 24px;
+}
+.middle h1{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.middle h3{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.middle span{
+    color: #94A3B8;
+}
+.middle a{
+    color: #94A3B8;
+    font-size: 16px;
+}
+.middle h3 ~ span{
+    display: block;
+    margin-bottom: 10px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom .socialMedia a{
+    color: #0F172A;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: #64748B;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialMedia{
+    display: flex;
+    align-items: center;
+
+}
+.bottom h5{
+    margin: 0;
+    font-size: 14px;
+    color: #94A3B8
+
+}
+.copywrite{
+    display: block;
+    text-align: center;
+    color: #64748B;
+    padding: 10px;
+    border-top: 1px solid #3f454e;
+}
+
+@media (max-width: 776px) {
+    .footer .top {
+        display: none;
+    }
+    .bottom  img{
+        width: 100px;
+    }
+    
+}

@@ -1,0 +1,117 @@
+.garage .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.garage .cars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.garage .card{
+    background-color: #f5f5f5;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+.garage .card img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background: #dddddd;
+    border-radius: 10px;
+}
+.garage .card .content{
+    text-align: end;
+}
+.garage button, .garage a.saerchBtn{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 250px;
+    font-size: 15px;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    
+}
+.card button{
+    display: block;
+    margin: 20px auto;
+}
+.garage .top button{
+    margin: 0;
+
+}
+.garage h2{
+    font-size: 28px;
+}
+.card h3{
+    font-size: 20px;
+    margin: 20px auto;
+    font-weight: 600;
+}
+.emtyGarage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    flex-direction: column;
+    color: #ccc;
+}
+.emtyGarage h1.noCras{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+
+}
+.emtyGarage button.addNewCar{
+    font-size: 13px;
+    width: 120px;
+    padding: 10px;
+
+}
+.garage p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.garage p span {
+    font-weight: 500;
+    font-size: 15px;
+}
+button.deleteBtn{
+    position: absolute;
+    background: rgba(243, 74, 74, 0.9);
+    padding: 5px 7px;
+    border-radius: 50%;
+    top: 0;
+    left: 20px;
+    width: fit-content;
+    color: #ccc;
+    transition: 0.3s all ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+
+}
+.card:hover button.deleteBtn{
+    opacity: 1;
+}
+@media screen and (max-width: 700px) {
+    .garage h2{
+        font-size: 20px;
+    }
+    .garage .top{
+        flex-direction: column-reverse;
+    }
+}

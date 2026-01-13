@@ -1,0 +1,30 @@
+.traders{
+    margin: 50px auto;
+
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.Card{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.Card h3{
+    color: var(--text-color);
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}

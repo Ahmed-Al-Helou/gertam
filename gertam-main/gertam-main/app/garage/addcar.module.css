@@ -1,0 +1,103 @@
+/* غطاء المودال */
+.addCar {
+    position: fixed;
+    inset: 0; /* top, right, bottom, left = 0 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    overflow-y: auto; /* لو المحتوى طويل */
+    padding: 20px;
+}
+
+/* الصندوق الأبيض للفورم */
+.form {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* صورة السيارة */
+.image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image label img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px dashed #ccc;
+    transition: border-color 0.2s;
+
+}
+
+.image label img:hover {
+    border-color: #0070f3;
+}
+
+/* كل فيلد */
+.filed {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    direction: rtl;
+    margin-top: 20px;
+}
+
+.filed label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.select {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #f5f5f5;
+    margin-top: 10px;
+    color: #333333;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filed input:focus {
+    border-color: #0070f3;
+    box-shadow: 0 0 0 3px rgba(0,112,243,0.2);
+    outline: none;
+}
+
+/* أنيميشن الدخول */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+
+.closeBtn:hover {
+    color: #000;
+}
+.addCar a{
+    display: block;
+    text-align: center;
+}

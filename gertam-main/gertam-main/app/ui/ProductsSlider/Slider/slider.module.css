@@ -1,0 +1,31 @@
+.silder{
+
+margin: 50px auto;
+}
+.silder .silderTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.silder .silderTitle .title{
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: baseline;
+    gap: 30px;
+
+}
+.silder .silderTitle{
+    font-size: 16px;
+}
+.silder .silderTitle .title h3{
+    font-size: 24px;
+        margin: 0;
+        font-weight: 600;
+}
+.silder .silderTitle .title span{
+    font-size: 16px;
+    color: var(--smail-text-color);
+    direction: rtl;
+}

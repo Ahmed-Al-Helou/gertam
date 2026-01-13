@@ -1,0 +1,20 @@
+.Articles{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px auto;
+}
+.Articles a{
+    color: var(--color-text);
+}
+.Articles .card{
+    direction: rtl;
+}
+.Articles .card img{
+width: 100%;
+border-radius: 6px;
+}
+.Articles .card h3{
+    font-size: 22px;
+    font-weight: 500;
+}

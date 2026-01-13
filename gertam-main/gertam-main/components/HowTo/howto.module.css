@@ -1,0 +1,132 @@
+.section{
+    width: calc(50% - 10px);
+    padding: 20px;
+    position: relative;
+    
+
+}
+.section span{
+    font-weight: 600;
+    font-size: 16px;
+
+}
+ .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.section img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.section .text{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.section .text h4{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    width: 70%;
+}
+.section .text p{
+    margin: 0;
+}
+.section .text button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--background);
+    color: var(--text-color);
+    bottom: 0;
+    margin-top: 10px;
+}
+.main{
+    display: flex;
+    margin-top: 100px;
+    direction: rtl;
+}
+.main .titleCoontent{
+    width: 500px;
+}
+.main .titleCoontent span{
+    color: #94A3B8;
+    font-size: 12px;
+}
+.main .titleCoontent h1{
+    font-size: 35px;
+    font-weight: 800;
+}
+.main .titleCoontent h1 span{
+    color: #94A3B8;
+    font-size: 35px;
+}
+.main .titleCoontent p{
+    font-size: 16px;
+    color: #475569;
+}
+.main .titleCoontent a{
+    color: #212529;
+    font-weight: 800;
+    text-decoration:revert;
+}
+.main .image img{
+    width: 500px;
+}
+.main .howtouse h4{
+font-size: 16px;
+font-weight: 500;
+margin: 0;
+}
+.main .howtouse p{
+font-size: 12px;
+}
+.main .step{
+    display: flex;
+    align-items: start;
+    margin-top: 10px;
+}
+.main .step:not(:last-child){
+    border-bottom: 1px solid #ccc;
+}
+.main .step  h5{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+.main .step p{
+    font-size: 12px;
+}
+
+.main .step span{
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 40px;
+    display: block;
+    margin-left: 10px;
+        
+
+}
+
+@media (max-width: 776px) {
+    .content{
+        flex-wrap: wrap;
+    }
+    .section{
+        width: 100%;
+        gap: 20px;
+    }
+    .section span{
+        font-size: 11px;
+    }
+    .section .text h4{
+        font-size: 15px;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

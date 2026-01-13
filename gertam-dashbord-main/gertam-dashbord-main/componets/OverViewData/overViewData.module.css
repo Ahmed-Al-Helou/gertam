@@ -1,0 +1,40 @@
+.overViewData{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    background: #ffffff;
+    padding: 20px;
+    width: 250px;
+}
+.conaent{
+    display: flex;
+align-items: center;
+}
+.card .icon{
+    background: rgba(20, 243, 39, 0.2);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.card .text h3{
+    font-size: 18px;
+}
+.card .text h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card h5{
+    display: flex;
+margin-top: 10px;
+}
+.card h5 span{
+    display: flex;
+    color: green;
+    margin-right: 5px;
+}

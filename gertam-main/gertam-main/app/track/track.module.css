@@ -1,0 +1,428 @@
+/* Track Page Styles */
+
+.container {
+  direction: rtl;
+  text-align: right;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+}
+
+.emptyText {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.shopButton {
+  display: inline-block;
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.shopButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+}
+
+/* Orders Grid */
+.ordersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.orderCard {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.orderCard:hover {
+  border-color: #667eea;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+  transform: translateY(-4px);
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.orderNumber {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.customerName {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.statusBadge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.label {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.value {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.viewButton {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.viewButton:hover {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Details View */
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: #e5e7eb;
+}
+
+.detailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e5e7eb;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.detailsTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.largeStatusBadge {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Timeline */
+.timeline {
+  margin: 60px 0;
+  padding: 40px 0;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.timelineContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.timelineItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timelineStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.stepCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.currentStep {
+  animation: pulse 2s infinite;
+}
+
+.stepIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.stepName {
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.timelineConnector {
+  position: absolute;
+  top: 30px;
+  right: -40px;
+  width: 80px;
+  height: 3px;
+  background: #e5e7eb;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+  }
+}
+
+/* Details Section */
+.detailsSection {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.detailValue {
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.statusValue {
+  color: #667eea;
+  background: #f0f4ff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .detailsTitle {
+    font-size: 1.5rem;
+  }
+
+  .ordersGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .timelineContainer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .timelineConnector {
+    top: 60px;
+    right: auto;
+    width: 3px;
+    height: 50px;
+    background: #e5e7eb;
+  }
+
+  .timelineItem:last-child .timelineConnector {
+    display: none;
+  }
+
+  .detailsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .detailItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .detailValue {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px !important;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+  }
+
+  .orderCard {
+    padding: 16px;
+  }
+
+  .stepCircle {
+    width: 50px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+
+  .stepName {
+    font-size: 0.85rem;
+  }
+
+  .detailsSection {
+    padding: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+}

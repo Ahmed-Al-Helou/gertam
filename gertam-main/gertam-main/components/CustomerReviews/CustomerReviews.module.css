@@ -1,0 +1,62 @@
+.CustomerReviews {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px auto;
+
+}
+.CustomerReviews .cardSummary{
+    padding: 20px;
+    width: 240px;
+}
+.CustomerReviews .cardSummary h3{
+    text-align: center;
+    margin: 0;
+}
+.CustomerReviews  .stars  {
+    background-color: #059669;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    gap: 10px;
+}
+.CustomerReviews .cardSummary .based{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.CustomerReviews .cardSummary  p{
+    margin-top: 10px;
+    text-align: center;
+}
+.CustomerReviews .card{
+    margin: 20px;
+    width: 180px;
+    direction: rtl;
+    /* display: flex; */
+}
+.CustomerReviews .card h4, .CustomerReviews .card h5{
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+}
+.CustomerReviews .card h5{
+    font-size: 12px;
+}
+.CustomerReviews .card h5 span{
+    font-weight: 100;
+}
+.CustomerReviews .card p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+@media (max-width: 776px) {
+    .CustomerReviews{
+        width: 250px;
+        
+    }
+}

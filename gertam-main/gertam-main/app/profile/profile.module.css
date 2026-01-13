@@ -1,0 +1,70 @@
+.profile{
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+.profile h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+.profile .profileSection {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile .profileSection  .user{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.profile .profileSection  .user img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile .profileSection  .user div{
+    margin-left: 10px;
+}
+.profile .profileSection  .user h2{
+    font-size: 20px;
+    margin: 0;
+}
+.profile .personalInfo h2{
+    font-size: 20px;
+    text-align: end;
+}
+.profile .personalInfo .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile .personalInfo .info .infoItem{
+    width: 50%;
+    direction: rtl;
+}
+.editBtn{
+    display: block;
+    text-align: center;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+}
+.editBtn:first-child{
+    background-color: red;
+}
+.profile .actions{
+    display: flex;
+}
